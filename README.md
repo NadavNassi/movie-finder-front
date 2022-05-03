@@ -1,5 +1,6 @@
 # First thing first:
-run yarn add to install all the dependencies
+1. run yarn add to install all the dependencies
+2. add .env file and add the "OMDB_KEY" key with the api key attache to the mail
 
 # to start the project
 run yarn start and a new window on your browser should open. if not, go to http://localhost:3000/#/
