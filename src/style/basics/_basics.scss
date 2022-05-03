@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: montserrat, sans-serif;
+    font-size: rem(16px);
+    // color: $clr2;
+}
+
+body {
+    margin: 0;
+    overflow-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Raleway, Arial;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0 0 0.6em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+    cursor: pointer;
+    &.active {
+        color: cornflowerblue;
+        border-bottom: 2px solid cornflowerblue;
+    }
+}
+button {
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.7;
+    }
+}

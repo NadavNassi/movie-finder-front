@@ -1,0 +1,14 @@
+.movie-card {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    .txt-1,
+    .txt-2 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    img {
+        object-fit: contain;
+    }
+}

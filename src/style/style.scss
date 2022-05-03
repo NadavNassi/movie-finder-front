@@ -1,0 +1,15 @@
+//Setup
+@import "setup/reset.scss";
+@import "setup/variables";
+@import "setup/mixins";
+
+//Basic
+@import "basics/basics";
+
+// Cmps
+@import "cmps/header";
+@import "cmps/card";
+@import "cmps/home";
+@import "cmps/movie-details";
+@import "cmps/app";
+@import "cmps/loader";
