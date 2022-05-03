@@ -44,7 +44,7 @@ export const MovieDetails = () => {
                 <p>Title: {movie.title}</p>
                 <p>Release date: {movie.released}</p>
                 <p>Rated: {movie.rated}</p>
-                <p>Genre: {movie.renre}</p>
+                <p>Genre: {movie.genre}</p>
                 <p>Director: {movie.director}</p>
                 <p>Writer: {movie.writer}</p>
                 <p>Actors: {movie.actors}</p>
