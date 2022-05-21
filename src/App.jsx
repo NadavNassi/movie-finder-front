@@ -5,6 +5,7 @@ import './style/style.scss'
 import { Header } from './cmps/header';
 import { Home } from './pages/home';
 import { Login } from './pages/login';
+import { MovieDetails } from './pages/movie-details'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <main>
           <Header />
           <Routes>
+            <Route path='/movie/:omdbID' element={<MovieDetails />} />
             <Route path='/' element={<Home />}>
               <Route path='login' element={<Login />} />
             </Route>

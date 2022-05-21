@@ -16,7 +16,7 @@ export const SearchMovie = () => {
         <section className="search-movie">
             <form onSubmit={onSubmit}>
                 <input type="text" placeholder="Enter movie name" value={txt} onChange={handleChange} />
-                <button type="submit" className={!txt && 'disabeld'} disabled={!txt}>Search</button>
+                <button type="submit" className={!txt ? 'disabeld' : ''} disabled={!txt}>Search</button>
             </form>
         </section>
     )
