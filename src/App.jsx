@@ -2,22 +2,20 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 
 
 import './style/style.scss'
-import { routes } from './routes';
+import { Header } from './cmps/header';
+import { Home } from './pages/home';
+import { Login } from './pages/login';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <main>
+          <Header />
           <Routes>
-            {routes.map(route => (
-              <Route
-                key={route.path}
-                exact
-                element={route.element}
-                path={route.path}
-              />
-            ))}
+            <Route path='/' element={<Home />}>
+              <Route path='login' element={<Login />} />
+            </Route>
           </Routes>
         </main>
       </Router>

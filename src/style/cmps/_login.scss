@@ -1,0 +1,20 @@
+.login-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(86, 86, 86, 0.377);
+    z-index: 10;
+    .login {
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+    }
+}

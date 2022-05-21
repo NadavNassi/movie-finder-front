@@ -1,6 +1,8 @@
-.header {
+header {
+    display: flex;
     margin-bottom: rem(15px);
     box-shadow: 0px 0px 16px 0px;
+    justify-content: space-between;
     .burger {
         display: none;
     }
@@ -15,6 +17,10 @@
         }
     }
     nav {
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
         width: 30%;
         height: 100%;
         align-items: center;

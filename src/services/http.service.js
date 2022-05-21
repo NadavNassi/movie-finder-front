@@ -10,26 +10,27 @@ var axios = Axios.create({
 })
 
 export const httpService = {
-    get(endpoint, data) {
-        return ajax(endpoint, 'GET', data)
+    get(endpoint, data, headers) {
+        return ajax(endpoint, 'GET', data, headers)
     },
-    post(endpoint, data) {
-        return ajax(endpoint, 'POST', data)
+    post(endpoint, data, headers) {
+        return ajax(endpoint, 'POST', data, headers)
     },
-    put(endpoint, data) {
-        return ajax(endpoint, 'PUT', data)
+    put(endpoint, data, headers) {
+        return ajax(endpoint, 'PUT', data, headers)
     },
-    delete(endpoint, data) {
-        return ajax(endpoint, 'DELETE', data)
+    delete(endpoint, data, headers) {
+        return ajax(endpoint, 'DELETE', data, headers)
     }
 }
 
-async function ajax(endpoint, method = 'GET', data = null) {
+async function ajax(endpoint, method = 'GET', data = null, headers) {
     try {
         const res = await axios({
             url: `${BASE_URL}${endpoint}`,
             method,
             data,
+            headers,
             params: (method === 'GET') ? data : null
         })
         return res.data

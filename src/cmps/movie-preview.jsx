@@ -6,7 +6,7 @@ import NoImg from '../assets/imgs/No_image_available.png'
 export const MoviePreview = ({ movie }) => {
     return (
         <div className="movie-preview">
-            <Link to={`/${movie.imdbID}`}>
+            <Link to={`/movie/${movie.imdbID}`}>
                 <CardUI
                     txt1={movie.Title}
                     txt2={movie.Year}
